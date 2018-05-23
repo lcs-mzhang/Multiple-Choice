@@ -54,21 +54,6 @@ for i in 1...expectedLines {
     answerKey[i] = givenLine
 }
 
-//input: for i in 1...expectedLines {
-//    prompting: while expectedLines != answerKey.count {
-//        guard let givenLine = readLine() else {
-//            continue
-//        }
-//        switch givenLine {
-//        case "A", "B", "C", "D", "E":
-//            answerKey[i] = givenLine
-//        default:
-//            continue input
-//        }
-//    }
-//}
-
-
 var correctAnswers = 0
 for i in 1...expectedLines {
     if answerKey[i] == studentAnswer[i] {
